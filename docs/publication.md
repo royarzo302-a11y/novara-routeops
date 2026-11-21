@@ -18,8 +18,8 @@ El control automático no reemplaza la revisión humana de datos personales, per
 
 ## Suggested release sequence / Secuencia
 
-1. Review the public baseline, run Python/frontend checks and create the initial source commit.
-2. Commit the Bedrock experiment, synthetic labels, protocol and measured offline baseline separately.
+1. The initial local snapshot contains the source, bilingual documentation, Bedrock experiment, labels and offline test baseline.
+2. A separate documentation commit adds the observed verification results, development baseline and synthetic screenshots.
 3. Add the GitHub remote, push the reviewed history and verify remote CI before adding success badges.
 4. Add a live-model comparison only after an authorized Bedrock run. Keep unreviewed live reports under ignored `evals/runs/`.
 5. Select a license before describing the code as open source. No license has been chosen yet.

@@ -47,3 +47,5 @@ The key experiment is whether Bedrock improves recall on unfamiliar labels witho
 The application is a supervised prototype. Joint previews do not reserve dispatch resources, matrices do not contain live traffic, and one-process SQLite does not solve distributed concurrency. Cloud publication is pending. Real-model evaluation and a user interface for reviewing AI proposals remain future work. No production usage, business savings or model-quality improvement is claimed.
 
 Development uses AI assistance. Portfolio ownership should be demonstrated by explaining the constraints, inspecting generated changes, reproducing results and defending the failure-handling decisions. Interview talking points: why row values are excluded from prompts, why ambiguous mappings abstain, why a timeout is different from proven infeasibility, and why preview plans require an operational confirmation boundary.
+
+[Current verification and synthetic screenshots](portfolio-verification.md).

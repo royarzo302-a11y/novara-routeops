@@ -19,6 +19,14 @@ RouteOps transforma nóminas Excel en vistas previas trazables: importa, conserv
 
 **Los resultados son simulaciones para evaluación supervisada**, no instrucciones de despacho aprobadas. La demo alojada tiene clave, sesiones temporales aisladas y factores operativos fijos. Solo admite los archivos ficticios emitidos por esa misma sesión.
 
+## Vista de la aplicación
+
+![Novara RouteOps: planificación sintética](docs/images/planning-desktop.png)
+
+Sesión sintética del perfil alojado: 16 solicitudes ficticias, 4 viajes y ninguna sin asignar en esta ejecución. El mapa es esquemático; no es un despacho operativo.
+
+[Preparación en escritorio](docs/images/preparation-desktop.png) · [Preparación en móvil](docs/images/preparation-mobile.png)
+
 ## Flujo principal
 
 Excel → ingesta determinista → revisión humana y procedencia → ubicaciones y matriz aprobadas → OR-Tools → mapa y Excel con supuestos.

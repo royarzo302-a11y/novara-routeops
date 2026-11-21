@@ -19,6 +19,14 @@ RouteOps turns Excel rosters into traceable planning previews: import, inspect a
 
 **Planning previews are simulations for supervised evaluation.** They are not approved dispatch instructions. The hosted demo is a separate profile with a password, temporary isolated sessions and fixed operational factors. It accepts only the synthetic files issued by the same session.
 
+## Application preview
+
+![Novara RouteOps: planificación sintética](docs/images/planning-desktop.png)
+
+Synthetic hosted session: 16 fictitious requests, 4 trips and no unassigned requests in this run. The map is schematic; this is not a live dispatch.
+
+[Preparación en escritorio](docs/images/preparation-desktop.png) · [Preparación en móvil](docs/images/preparation-mobile.png)
+
 ## Architecture at a glance
 
 ```mermaid

@@ -47,3 +47,5 @@ La pregunta experimental es si Bedrock mejora la recuperación de campos descono
 Es un prototipo supervisado. Las vistas previas conjuntas no reservan recursos de despacho, las matrices no incluyen tráfico en vivo y SQLite en un proceso no resuelve concurrencia distribuida. Faltan la publicación en nube, la evaluación con un modelo real y la interfaz de revisión de propuestas de IA. No se atribuyen uso productivo, ahorro de negocio ni mejoras de precisión sin evidencia.
 
 Se utiliza asistencia de IA en el desarrollo. La autoría profesional debe demostrarse explicando las restricciones, revisando los cambios y reproduciendo los resultados. Temas para entrevista: exclusión de valores personales del prompt, abstención ante ambigüedad, diferencia entre timeout e inviabilidad demostrada, y separación entre vista previa y confirmación operativa.
+
+[Verificación actual y capturas sintéticas](portfolio-verification.md).

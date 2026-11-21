@@ -1,0 +1,70 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Novara RouteOps - isolated ceteris paribus demo on ECS Express Mode",
+  "Parameters": {
+    "ImageUri": {
+      "Type": "String",
+      "Description": "Private ECR URI pinned to a tested linux/amd64 image digest",
+      "AllowedPattern": "[0-9]{12}\\.dkr\\.ecr\\.[a-z0-9-]+\\.amazonaws\\.com/.+@sha256:[a-f0-9]{64}"
+    }
+  },
+  "Resources": {
+    "DemoPassword": {
+      "Type": "AWS::SecretsManager::Secret",
+      "Properties": {
+        "Description": "Novara temporary demo login password",
+        "GenerateSecretString": { "PasswordLength": 48, "ExcludePunctuation": true }
+      }
+    },
+    "ExecutionRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [{ "Effect": "Allow", "Principal": { "Service": "ecs-tasks.amazonaws.com" }, "Action": "sts:AssumeRole" }]
+        },
+        "ManagedPolicyArns": [{ "Fn::Sub": "arn:${AWS::Partition}:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy" }],
+        "Policies": [{
+          "PolicyName": "ReadDemoPassword",
+          "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [{ "Effect": "Allow", "Action": "secretsmanager:GetSecretValue", "Resource": { "Ref": "DemoPassword" } }]
+          }
+        }]
+      }
+    },
+    "InfrastructureRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [{ "Effect": "Allow", "Principal": { "Service": "ecs.amazonaws.com" }, "Action": "sts:AssumeRole" }]
+        },
+        "ManagedPolicyArns": [{ "Fn::Sub": "arn:${AWS::Partition}:iam::aws:policy/service-role/AmazonECSInfrastructureRoleforExpressGatewayServices" }]
+      }
+    },
+    "Demo": {
+      "Type": "AWS::ECS::ExpressGatewayService",
+      "Properties": {
+        "ServiceName": { "Fn::Sub": "${AWS::StackName}" },
+        "ExecutionRoleArn": { "Fn::GetAtt": ["ExecutionRole", "Arn"] },
+        "InfrastructureRoleArn": { "Fn::GetAtt": ["InfrastructureRole", "Arn"] },
+        "Cpu": "1024",
+        "Memory": "2048",
+        "HealthCheckPath": "/health",
+        "ScalingTarget": { "MinTaskCount": 1, "MaxTaskCount": 1 },
+        "PrimaryContainer": {
+          "Image": { "Ref": "ImageUri" },
+          "ContainerPort": 10000,
+          "Environment": [{ "Name": "PORT", "Value": "10000" }],
+          "Secrets": [{ "Name": "NOVARA_DEMO_PASSWORD", "ValueFrom": { "Ref": "DemoPassword" } }]
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "DemoEndpoint": { "Value": { "Fn::GetAtt": ["Demo", "Endpoint"] } },
+    "DemoServiceArn": { "Value": { "Fn::GetAtt": ["Demo", "ServiceArn"] } },
+    "PasswordSecretArn": { "Value": { "Ref": "DemoPassword" } }
+  }
+}

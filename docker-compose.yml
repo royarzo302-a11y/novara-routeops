@@ -1,0 +1,21 @@
+services:
+  backend:
+    build:
+      context: .
+      target: backend-local
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: ${COMPOSE_DATABASE_URL:-sqlite:////app/storage/routeops.db}
+      NOVARA_GEO_TOKEN: ${NOVARA_GEO_TOKEN:-}
+      NOVARA_GEO_LOCAL_AUTHORIZED: ${NOVARA_GEO_LOCAL_AUTHORIZED:-0}
+      NOVARA_NOMINATIM_URL: ${NOVARA_NOMINATIM_URL:-}
+      NOVARA_OSRM_URL: ${NOVARA_OSRM_URL:-}
+      NOVARA_GEO_MAP_VERSION: ${NOVARA_GEO_MAP_VERSION:-}
+      NOVARA_OSRM_PROFILE: ${NOVARA_OSRM_PROFILE:-driving}
+    volumes:
+      - routeops-storage:/app/storage
+    restart: unless-stopped
+
+volumes:
+  routeops-storage:

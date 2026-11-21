@@ -1,0 +1,28 @@
+name: Backend checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install locked dependencies
+        run: |
+          python -m pip install uv==0.12.5
+          uv sync --frozen --extra ai
+      - name: Public repository boundary
+        run: python scripts/check_publication.py
+      - name: Ruff
+        run: |
+          uv run --frozen --extra ai ruff check .
+          uv run --frozen --extra ai ruff format --check .
+      - name: Pytest
+        run: uv run --frozen --extra ai pytest -q
+      - name: Offline header evaluation
+        run: uv run --frozen --extra ai python scripts/evaluate_headers.py --split test --output evals/runs/baseline-ci.json
+      - name: Build backend image
+        run: docker build -t novara-routeops:ci .

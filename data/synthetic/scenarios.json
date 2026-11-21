@@ -1,0 +1,42 @@
+{
+  "simulation": true,
+  "service_date": "2026-11-20",
+  "depot": {
+    "name": "Depósito sintético Gran América",
+    "address": "Calle Simulada 1000",
+    "latitude": -33.45,
+    "longitude": -70.65
+  },
+  "fleet": {
+    "vans": 3,
+    "capacity_each": 6,
+    "driver_start": "00:00",
+    "driver_end": "08:00"
+  },
+  "cases": {
+    "A": {
+      "file": "case_a_structured.xlsx",
+      "config": {}
+    },
+    "B": {
+      "file": "case_b_messy.xlsx",
+      "config": {}
+    },
+    "C": {
+      "file": "case_c_errors.xlsx",
+      "expected": "needs_review"
+    },
+    "D": {
+      "file": "case_d_feasible.xlsx",
+      "config": {},
+      "expected": "feasible"
+    },
+    "E": {
+      "file": "case_e_infeasible.xlsx",
+      "config": {
+        "max_onboard_minutes": 1
+      },
+      "expected": "infeasible"
+    }
+  }
+}

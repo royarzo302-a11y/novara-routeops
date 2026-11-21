@@ -1,0 +1,560 @@
+{
+  "dataset_version": "headers-synthetic-v1",
+  "dataset_sha256": "1d8008d1c47bef8dddd34bf1e383f42609465acfe69d128576410e2f50affb83",
+  "provider": "baseline",
+  "model_id": null,
+  "region": null,
+  "prompt_version": null,
+  "split": "test",
+  "max_output_tokens": null,
+  "temperature": null,
+  "estimated_cost_usd": null,
+  "cost_note": "Not estimated: apply verified model rates to measured token counts.",
+  "summary": {
+    "cases": 24,
+    "correct_mappings": 13,
+    "predicted_mappings": 13,
+    "expected_mappings": 51,
+    "precision": 1.0,
+    "recall": 0.2549019607843137,
+    "exact_match_rate": 0.5,
+    "wrong_mappings": 0,
+    "missed_mappings": 38,
+    "errors": 0,
+    "median_latency_ms": 0.0215,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "cohorts": {
+    "novel": {
+      "cases": 6,
+      "correct_mappings": 0,
+      "predicted_mappings": 0,
+      "expected_mappings": 19,
+      "precision": null,
+      "recall": 0.0,
+      "exact_match_rate": 0.0,
+      "wrong_mappings": 0,
+      "missed_mappings": 19,
+      "errors": 0,
+      "median_latency_ms": 0.026,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "english": {
+      "cases": 6,
+      "correct_mappings": 0,
+      "predicted_mappings": 0,
+      "expected_mappings": 19,
+      "precision": null,
+      "recall": 0.0,
+      "exact_match_rate": 0.0,
+      "wrong_mappings": 0,
+      "missed_mappings": 19,
+      "errors": 0,
+      "median_latency_ms": 0.019,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "ambiguous": {
+      "cases": 6,
+      "correct_mappings": 4,
+      "predicted_mappings": 4,
+      "expected_mappings": 4,
+      "precision": 1.0,
+      "recall": 1.0,
+      "exact_match_rate": 1.0,
+      "wrong_mappings": 0,
+      "missed_mappings": 0,
+      "errors": 0,
+      "median_latency_ms": 0.0195,
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "adversarial": {
+      "cases": 6,
+      "correct_mappings": 9,
+      "predicted_mappings": 9,
+      "expected_mappings": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "exact_match_rate": 1.0,
+      "wrong_mappings": 0,
+      "missed_mappings": 0,
+      "errors": 0,
+      "median_latency_ms": 0.021,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  },
+  "cases": [
+    {
+      "id": "headers-013",
+      "split": "test",
+      "cohort": "novel",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 4,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.239,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-014",
+      "split": "test",
+      "cohort": "novel",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.634,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-015",
+      "split": "test",
+      "cohort": "novel",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.026,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-016",
+      "split": "test",
+      "cohort": "novel",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.026,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-017",
+      "split": "test",
+      "cohort": "novel",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.024,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-018",
+      "split": "test",
+      "cohort": "novel",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.022,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-019",
+      "split": "test",
+      "cohort": "english",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 4,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.023,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-020",
+      "split": "test",
+      "cohort": "english",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.018,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-021",
+      "split": "test",
+      "cohort": "english",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.019,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-022",
+      "split": "test",
+      "cohort": "english",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.025,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-023",
+      "split": "test",
+      "cohort": "english",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.019,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-024",
+      "split": "test",
+      "cohort": "english",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 3,
+      "exact": false,
+      "error": null,
+      "latency_ms": 0.019,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-025",
+      "split": "test",
+      "cohort": "ambiguous",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 0,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.017,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-026",
+      "split": "test",
+      "cohort": "ambiguous",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 0,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.019,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-027",
+      "split": "test",
+      "cohort": "ambiguous",
+      "correct": 1,
+      "predicted": 1,
+      "expected": 1,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.037,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [
+          {
+            "column": 2,
+            "field": "commune"
+          }
+        ],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-028",
+      "split": "test",
+      "cohort": "ambiguous",
+      "correct": 1,
+      "predicted": 1,
+      "expected": 1,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.02,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [
+          {
+            "column": 2,
+            "field": "work_time"
+          }
+        ],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-029",
+      "split": "test",
+      "cohort": "ambiguous",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 0,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.018,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-030",
+      "split": "test",
+      "cohort": "ambiguous",
+      "correct": 2,
+      "predicted": 2,
+      "expected": 2,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.025,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [
+          {
+            "column": 0,
+            "field": "employee_code"
+          },
+          {
+            "column": 1,
+            "field": "commune"
+          }
+        ],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-031",
+      "split": "test",
+      "cohort": "adversarial",
+      "correct": 2,
+      "predicted": 2,
+      "expected": 2,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.024,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [
+          {
+            "column": 1,
+            "field": "name"
+          },
+          {
+            "column": 2,
+            "field": "commune"
+          }
+        ],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-032",
+      "split": "test",
+      "cohort": "adversarial",
+      "correct": 2,
+      "predicted": 2,
+      "expected": 2,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.021,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [
+          {
+            "column": 1,
+            "field": "employee_code"
+          },
+          {
+            "column": 2,
+            "field": "work_time"
+          }
+        ],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-033",
+      "split": "test",
+      "cohort": "adversarial",
+      "correct": 2,
+      "predicted": 2,
+      "expected": 2,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.021,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [
+          {
+            "column": 1,
+            "field": "address"
+          },
+          {
+            "column": 2,
+            "field": "phone"
+          }
+        ],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-034",
+      "split": "test",
+      "cohort": "adversarial",
+      "correct": 1,
+      "predicted": 1,
+      "expected": 1,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.019,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [
+          {
+            "column": 1,
+            "field": "terminal_name"
+          }
+        ],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-035",
+      "split": "test",
+      "cohort": "adversarial",
+      "correct": 2,
+      "predicted": 2,
+      "expected": 2,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.022,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [
+          {
+            "column": 1,
+            "field": "service_date"
+          },
+          {
+            "column": 2,
+            "field": "end_time"
+          }
+        ],
+        "requires_human_review": true
+      }
+    },
+    {
+      "id": "headers-036",
+      "split": "test",
+      "cohort": "adversarial",
+      "correct": 0,
+      "predicted": 0,
+      "expected": 0,
+      "exact": true,
+      "error": null,
+      "latency_ms": 0.018,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "proposal": {
+        "mappings": [],
+        "requires_human_review": true
+      }
+    }
+  ]
+}

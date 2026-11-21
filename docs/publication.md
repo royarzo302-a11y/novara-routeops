@@ -2,9 +2,9 @@
 
 ## Current preparation / Preparación actual
 
-The repository is being prepared locally. A local commit does not publish anything. GitHub remote creation and public visibility must be verified separately after the release content has been reviewed.
+The reviewed source is published at [https://github.com/royarzo302-a11y/novara-routeops](https://github.com/royarzo302-a11y/novara-routeops), with public visibility and default branch `main`. The first published head was `439b66695797c0c9f327958064165989c628fd0e`; it matched the local source at publication. CI results are available through the README workflow badges. Cloud deployment and live-model evaluation remain separate pending milestones.
 
-El repositorio se prepara localmente. Un commit local no publica archivos. La creación del remoto y su visibilidad pública requieren una revisión independiente del contenido final.
+El código revisado está publicado en el enlace anterior, con visibilidad pública y rama `main`. Se verificó que el primer HEAD publicado coincidía con la copia local. Los indicadores del README enlazan a CI. El despliegue en nube y la evaluación real del modelo siguen pendientes.
 
 ## Release boundary / Límite público
 

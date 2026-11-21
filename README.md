@@ -1,5 +1,7 @@
 # Novara RouteOps
 
+[![Backend checks](https://github.com/royarzo302-a11y/novara-routeops/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/royarzo302-a11y/novara-routeops/actions/workflows/ci.yml) [![Frontend checks](https://github.com/royarzo302-a11y/novara-routeops/actions/workflows/frontend.yml/badge.svg?branch=main)](https://github.com/royarzo302-a11y/novara-routeops/actions/workflows/frontend.yml)
+
 **Human-reviewed employee transport planning, with an optional Amazon Bedrock experiment for unfamiliar spreadsheet headers.**
 
 [Español](README.es.md) · [Portfolio case study](docs/portfolio.md) · [Architecture](docs/architecture.md) · [AI evaluation](docs/ai-headers.md)

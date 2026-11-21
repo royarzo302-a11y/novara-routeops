@@ -1,5 +1,7 @@
 # Novara RouteOps
 
+[![Backend checks](https://github.com/royarzo302-a11y/novara-routeops/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/royarzo302-a11y/novara-routeops/actions/workflows/ci.yml) [![Frontend checks](https://github.com/royarzo302-a11y/novara-routeops/actions/workflows/frontend.yml/badge.svg?branch=main)](https://github.com/royarzo302-a11y/novara-routeops/actions/workflows/frontend.yml)
+
 **Planificación supervisada de transporte de personal, con un experimento opcional en Amazon Bedrock para interpretar encabezados de Excel desconocidos.**
 
 [English](README.md) · [Caso de portfolio](docs/portfolio.es.md) · [Arquitectura](docs/architecture.md) · [Evaluación de IA](docs/ai-headers.es.md)

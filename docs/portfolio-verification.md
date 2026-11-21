@@ -1,8 +1,8 @@
 # Portfolio verification / Verificación del portfolio
 
-Date / Fecha: 21 November / noviembre 2026. All inputs were synthetic. These are local results; remote GitHub Actions and public cloud deployment are pending.
+Date / Fecha: 21 November / noviembre 2026. All inputs were synthetic. The table below records local results. Source publication is now verified; remote CI is reported by the live workflow badges in the README. Public cloud deployment remains pending.
 
-Todos los datos utilizados fueron sintéticos. Son resultados locales; CI remoto y despliegue público siguen pendientes.
+Todos los datos utilizados fueron sintéticos. La tabla registra resultados locales. La publicación del código ya se verificó; los indicadores del README muestran CI remoto. El despliegue público en nube sigue pendiente.
 
 | Check / Comprobación | Observed result / Resultado |
 | --- | --- |
